@@ -779,6 +779,7 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 text-align: center;
 color: #2e2f42;
+margin-bottom: 16px;
 }
 
 .input-container{
@@ -788,9 +789,11 @@ gap: 8px;
 border-radius: 4px;
 width: 360px;
 height: 336px;
-padding-left: 24px;
-padding-top: 16px;
 
+
+}
+.inputs{
+    margin-bottom: 8px;
 }
 
 .modal-inputs{
@@ -815,12 +818,31 @@ font-size: 12px;
 line-height: 1.16667;
 letter-spacing: 0.04em;
 color: rgba(46, 47, 66, 0.4);
+width: 100%;
+line-height: 1.17;
+background-color: transparent;
+outline: transparent;
+resize: none;
+transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+.comment:focus{
+    border-color: #4D5AE5;
 }
 .input-column{
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     width: 360px;
     height: 40px;
+    width: 100%;
+    background-color: transparent;
+    padding-left: 38px;
+    outline: transparent; 
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    
+}
+.input-column:hover,
+.input-column:focus{
+    border-color: #4D5AE5;
 }
 .modal-label{
     font-weight: 400;
@@ -828,13 +850,20 @@ font-size: 12px;
 line-height: 1.16667;
 letter-spacing: 0.04em;
 color: #8e8f99;
+line-height: 1.17;
+display: block;
+margin-bottom: 4px;
 }
 .icon-modal{
     position: absolute;
     top: 8px;
     left: 16px;
+    top: 50%; 
+    transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
+
 .svg-field{
     position: relative;
 }
@@ -848,9 +877,7 @@ border-radius: 4px;
 width: 360px;
 height: 16px;
 }
-.check-input {
-    margin-bottom: 24px;
-  }
+
 .privacy-label{
     font: 400 12px / 1.16667 "Roboto", sans-serif;
     letter-spacing: 0.04em;
@@ -874,6 +901,7 @@ color: #4d5ae5;
     height: 16px;
     
     
+    
 }
 check:hover{
     border-radius: 2px;
@@ -881,7 +909,7 @@ fill: #404bbf;
 border: 1px solid #404bbf;
 }
 .checkbox-span{
-    display: inline-flex;
+
     width: 16px;
     height: 16px;
     border-radius: 2px;
@@ -920,6 +948,7 @@ border: 1px solid #404bbf;
     color: #fff;
     border: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
    
   }
   
